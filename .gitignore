@@ -1,0 +1,4 @@
+*.docx *.doc git add .gitignore git commit -m Adição do ficheiro git ignore para rejeitar doc e docx git push origin master
+*.docx *.doc git add .gitignore
+*.docx
+*.doc
