@@ -1,0 +1,144 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{geometry}
+\geometry{left=3cm, right=2.5cm, top=2.5cm, bottom=2.5cm}
+
+\title{\textbf{Proposta de Projeto Final}}
+\author{Nome do Estudante}
+\date{\today}
+
+\begin{document}
+
+% Capa com imagem
+\begin{titlepage}
+    \centering
+    \includegraphics[width=0.5\textwidth]{istec.jpeg}
+    \vspace{1cm}
+
+    {\LARGE \textbf{ISTEC} \par}
+    \vspace{1.5cm}
+
+    {\Large \textbf{Projeto Final} \par}
+    \vspace{0.5cm}
+
+    \textbf{Goncalo Queirós} \\
+    Curso:Desenvolvimento de Software \\
+
+    \textbf{Disciplina} \\
+    Desenvolvimento Agil de Software \\
+
+    \vfill
+
+    {\large \today\par}
+\end{titlepage}
+
+\newpage
+\tableofcontents
+\newpage
+
+\section{Introdução}
+Este relatório descreve o processo de criação de um repositório GitHub utilizando o modelo GitFlow para gestão de branches, controle de versões e revisão de código. Foram aplicadas práticas recomendadas para gerenciar acessos, configurar revisões obrigatórias e ignorar arquivos desnecessários.
+
+\section{Criação do repositório e configuração do gitflow}
+
+
+\fbox{
+\begin{minipage}{1\linewidth}
+
+c c:repositorios\\
+cd projetofinal\\
+
+git init\\
+
+git remote add origin http:/etc\\
+
+git add .\\
+git commit -m "primeiro commit"\\
+
+git branch -m main\\
+git push -u origin main\\
+
+git flow init\\
+
+
+
+git push origin master\\
+
+\end{minipage}
+}
+
+
+
+\section{Desenvolvimento}
+ \fbox{
+\begin{minipage}{1\linewidth}
+
+git flow feature start feature1\\
+git flow feature finish feature1\\
+
+git flow hotfix start versao1\\
+git flow hotfix finish versao1\\
+
+git flow bugfix start versao1\\
+git flow bugfix finish versao1\\
+
+git add \texttt{.}gitignore\\
+echo "*.doc" \texttt{>>} .gitignore\\
+echo "*.docx" \texttt{>>} .gitignore\\
+
+\end{minipage}
+}
+\\
+.\\
+\\
+
+\section{Ferramentas}
+As ferramentas que foram utilizadas para a conclusão deste relatório foram:
+
+\subsection{Git}
+\includegraphics[width=0.4\textwidth]{git.svg.png}
+    \vspace{1cm}
+    \vspace{0.5cm}
+    \begin{itemize}
+        \item O Git é um sistema de controle de versão distribuído que permite gerenciar alterações em projetos de forma colaborativa. Ele facilita o trabalho em equipe, mantendo um histórico completo de mudanças e permitindo a criação de ramificações para desenvolvimento isolado. Neste projeto, utilizei o Git para criar o repositório, gerenciar versões e configurei um arquivo .gitignore para excluir arquivos desnecessários.
+    \end{itemize}
+
+\subsection{GitHub}
+\includegraphics[width=0.2\textwidth]{github.png}
+    \vspace{1cm}
+    \vspace{0.5cm}
+    \begin{itemize}
+        \item O GitHub é uma plataforma de hospedagem de código-fonte baseada no Git, que facilita o controle de versão e a colaboração em projetos de software. Ele permite armazenar repositórios, compartilhar código e colaborar com outros desenvolvedores em tempo real. No GitHub, coloquei o arquivo .gitignore para garantir que arquivos desnecessários não fossem versionados e utilizei a plataforma para hospedar os relatórios em PDF, armazenando cinco cópias dos relatórios para facilitar o acesso e a organização do projeto.
+    \end{itemize}
+
+\subsection{Overleaf}
+\includegraphics[width=0.5\textwidth]{overleaf.jpg}
+    \vspace{1cm}
+    \vspace{0.5cm}
+    \begin{itemize}
+        \item Este projeto foi desenvolvido utilizando a plataforma Overleaf, um editor de LaTeX colaborativo e baseado na web. No Overleaf, desenvolvi o documento com o formato e a estrutura necessários para a apresentação do conteúdo, aproveitando todos os recursos que a ferramenta oferece, como a pré-visualização instantânea. Ao finalizar a elaboração do conteúdo, exportei o arquivo como PDF, o qual foi posteriormente colocado no repositório.
+    \end{itemize}
+
+
+\section{Repositorio}
+
+Acesse o repositório: \url{https://github.com/Goncalo842/DAS_Projeto_Final}
+
+\section{Webgrafia}
+  \begin{itemize}
+  \item Git - https://git-scm.com
+  \item GitHub - https://github.com
+  \item Overleaf - https://pt.overleaf.com
+\end{itemize}
+
+
+
+
+
+\section{Conclusão}
+A utilização do modelo GitFlow permitiu organizar o desenvolvimento de forma clara e eficiente, garantindo que novas funcionalidades fossem integradas com segurança. As configurações de proteção das branches no GitHub e a aplicação de práticas recomendadas fortaleceram o controle de versões e a qualidade do código. Além disso, o uso do Overleaf facilitou a criação deste relatório com uma formatação profissional. Com isso, o projeto alcançou uma gestão mais estruturada e colaborativa.
+
+\end{document}
